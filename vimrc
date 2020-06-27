@@ -1,26 +1,9 @@
-" Enabling filetype support provides filetype-specific indenting,
-" syntax highlighting, omni-completion and other useful settings.
+" Enable syntax highlighting and file-based indentation
 filetype plugin indent on
 syntax on
 
-" `matchit.vim` is built-in so let's enable it!
-" Hit `%` on `if` to jump to `else`.
+" Enable match-jumping with %
 runtime macros/matchit.vim
-
-" Open NERDTree on startup (Activate if needed)
-" autocmd vimenter * NERDTree
-
-" Also use C-n
-map <C-n> :NERDTreeToggle<CR>
-
-" leader key
-let mapleader = ","
-
-" Fast saving
-nmap <leader>w :w!<cr>
-
-" Toggle relative number
-map <silent> <leader>r :set rnu! <cr>
 
 " various settings
 set autoindent                 " Minimal automatic indenting for any filetype.
@@ -38,6 +21,7 @@ set ruler		               " Always show current position
 set ignorecase                 " Ignore case when searching
 set smartcase                  " Override ignorecase when capital letters are entered
 
+" Tab settings (4 spaces instead of tab)
 set tabstop=4
 set shiftwidth=4
 set expandtab
@@ -72,6 +56,23 @@ hi clear CursorLine
 set nobackup
 set nowb
 set noswapfile
+
+" Key mappings
+
+" Set leader key
+let mapleader = ","
+
+" Open NERDTree on startup (Activate if needed)
+" autocmd vimenter * NERDTree
+
+" Ctrl-n to open NERDTree
+map <C-n> :NERDTreeToggle<CR>
+
+" Fast saving
+nmap <leader>w :w!<cr>
+
+" Toggle relative number
+map <silent> <leader>r :set rnu! <cr>
 
 " Turn off highlighting
 map <silent> <leader><cr> :noh<cr>
