@@ -1,5 +1,4 @@
 # Ignore NERDTree history
-
 .netrwhist
 
 # Ignore plugin folders
