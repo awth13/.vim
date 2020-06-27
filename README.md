@@ -6,16 +6,9 @@ The configuration uses some plugins not included in this repo. For convenience, 
 
 ## Plugins
 
-* [gruvbox](https://github.com/morhetz/gruvbox) 
-* [indentLine](https://github.com/Yggdroot/indentLine) 
-* [lightline.vim](https://github.com/itchyny/lightline.vim)  
-* [vim-gitbranch][] 
-* [The NERDTree][] 
-* [YouCompleteMe][] 
-    
-[1]: https://github.com/morhetz/gruvbox 
-[2]: https://github.com/Yggdroot/indentLine 
-[3]: https://github.com/itchyny/lightline.vim 
-[4]: https://github.com/itchyny/vim-gitbranch
-[5]: https://github.com/preservim/nerdtree 
-[6]: https://github.com/ycm-core/YouCompleteMe
+* [gruvbox](https://github.com/morhetz/gruvbox) colorscheme
+* [indentLine](https://github.com/Yggdroot/indentLine) adds indent lines
+* [lightline.vim](https://github.com/itchyny/lightline.vim) light-weight statusline
+* [vim-gitbranch](https://github.com/itchyny/vim-gitbranch) allows getting current git branch name
+* [The NERDTree](https://github.com/preservim/nerdtree) file system explorer
+* [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) autocomplete engine
