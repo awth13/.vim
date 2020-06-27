@@ -6,12 +6,12 @@ The configuration uses some plugins not included in this repo. For convenience, 
 
 ## Plugins
 
-    * [gruvbox][1] 
-    * [indentLine][2] 
-    * [lightline.vim][3] 
-    * [vim-gitbranch][4] 
-    * [The NERDTree][5] 
-    * [YouCompleteMe][6] 
+* [gruvbox][1] 
+* [indentLine][2] 
+* [lightline.vim][3] 
+* [vim-gitbranch][4] 
+* [The NERDTree][5] 
+* [YouCompleteMe][6] 
     
 [1]: https://github.com/morhetz/gruvbox 
 [2]: https://github.com/Yggdroot/indentLine 
