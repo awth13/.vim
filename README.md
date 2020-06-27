@@ -6,12 +6,12 @@ The configuration uses some plugins not included in this repo. For convenience, 
 
 ## Plugins
 
-    * [gruvbox][1] colorscheme
-    * [indentLine][2] displays lines at indentation levels
-    * [lightline.vim][3] light-weight statusline
-    * [vim-gitbranch][4] provides a function returning the name of the current git branch
-    * [The NERDTree][5] file system explorer 
-    * [YouCompleteMe][6] code completion engine
+    * [gruvbox][1] 
+    * [indentLine][2] 
+    * [lightline.vim][3] 
+    * [vim-gitbranch][4] 
+    * [The NERDTree][5] 
+    * [YouCompleteMe][6] 
     
 [1]: https://github.com/morhetz/gruvbox 
 [2]: https://github.com/Yggdroot/indentLine 
