@@ -31,22 +31,28 @@ set cmdheight=2                " cmd window height 2
 " Set and format status line
 set laststatus=2
 
-" Set line colorscheme
+" Terminal window size
+set splitbelow
+set termwinsize=10x0
+
+" Set 256 colour support
+set t_Co=256
+
 let g:lightline = {
-      \ 'colorscheme': 'gruvbox',
-      \ 'active': {
-      \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
-      \ },
-      \ 'component_function': {
-      \   'gitbranch': 'gitbranch#name'
-      \ },
-      \ }
+            \ 'colorscheme': 'gruvbox',
+            \ 'active': {
+            \   'left': [ [ 'mode', 'paste' ],
+            \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+            \ },
+            \ 'component_function': {
+            \   'gitbranch': 'gitbranch#name'
+            \ },
+            \ }
 
 " Set colorscheme
 set background=dark
-let g:gruvbox_contrast_dark='hard'
-colorscheme gruvbox
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox 
 
 " Highlight current line number
 set cursorline
@@ -61,12 +67,6 @@ set noswapfile
 
 " Set leader key
 let mapleader = ","
-
-" Open NERDTree on startup (Activate if needed)
-" autocmd vimenter * NERDTree
-
-" Ctrl-n to open NERDTree
-map <C-n> :NERDTreeToggle<CR>
 
 " Fast saving
 nmap <leader>w :w!<cr>
