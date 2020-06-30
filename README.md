@@ -10,5 +10,4 @@ The configuration uses some plugins not included in this repo. For convenience, 
 * [indentLine](https://github.com/Yggdroot/indentLine) - adds indent lines
 * [lightline.vim](https://github.com/itchyny/lightline.vim) - light-weight statusline
 * [vim-gitbranch](https://github.com/itchyny/vim-gitbranch) - allows getting current git branch name
-* [The NERDTree](https://github.com/preservim/nerdtree) - file system explorer
 * [YouCompleteMe](https://github.com/ycm-core/YouCompleteMe) - autocomplete engine
