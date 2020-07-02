@@ -31,9 +31,13 @@ set cmdheight=2                " cmd window height 2
 " Set and format status line
 set laststatus=2
 
-" Terminal window size
+" Terminal window size (rework)
 set splitbelow
-set termwinsize=10x0
+set splitright
+" set termwinsize=10x0
+
+" Stop opening autocomplete window!
+autocmd CompleteDone * pclose
 
 " Set 256 colour support
 set t_Co=256
