@@ -5,6 +5,10 @@ syntax on
 " Enable match-jumping with %
 runtime macros/matchit.vim
 
+" Configure vim-slime for tmux
+let g:slime_target = "tmux"
+let g:slime_default_config = {"socket_name": "default", "target_pane": ":.1"}
+
 " various settings
 set autoindent                 " Minimal automatic indenting for any filetype.
 set backspace=indent,eol,start " Proper backspace behavior.
@@ -26,12 +30,13 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 
-set cmdheight=2                " cmd window height 2
+" cmd window height 2
+set cmdheight=2
 
 " Set and format status line
 set laststatus=2
 
-" Terminal window size (rework)
+" Window split settings
 set splitbelow
 set splitright
 " set termwinsize=10x0

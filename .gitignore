@@ -1,5 +1,6 @@
-# Ignore NERDTree history
+# Ignore netrw history
 .netrwhist
 
 # Ignore plugin folders
 /pack 
+/plugin
