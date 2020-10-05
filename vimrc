@@ -63,6 +63,15 @@ set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox 
 
+" Set cursor type
+" Troubleshoot: doesn't work with tmux
+if &term =~ '^xterm'
+    " normal mode
+    let &t_EI .= "\<Esc>[0 q"
+    " insert mode
+    let &t_SI .= "\<Esc>[6 q"
+endif
+
 " Highlight current line number
 set cursorline
 hi clear CursorLine
