@@ -63,13 +63,20 @@ set background=dark
 let g:gruvbox_contrast_dark = 'hard'
 colorscheme gruvbox 
 
-" Set cursor type
-" Troubleshoot: doesn't work with tmux
+" Set cursor type 
+" Troubleshoot: is this mess necessary?
 if &term =~ '^xterm'
-    " normal mode
-    let &t_EI .= "\<Esc>[0 q"
-    " insert mode
-    let &t_SI .= "\<Esc>[6 q"
+    let &t_EI .= "\<Esc>[1 q" "EI = NORMAL mode
+    let &t_SI .= "\<Esc>[5 q" "SI = INSERT mode
+    let &t_SR .= "\<Esc>[4 q" "SR = REPLACE mode
+elseif exists('$TMUX')
+    let &t_EI = "\<Esc>Ptmux;\<Esc>\e[1 q\<Esc>\\" 
+    let &t_SI = "\<Esc>Ptmux;\<Esc>\e[5 q\<Esc>\\"
+    let &t_SR = "\<Esc>Ptmux;\<Esc>\e[4 q\<Esc>\\"
+else
+    let &t_EI = "\e[1 q"
+    let &t_SI = "\e[5 q"
+    let &t_SR = "\e[4 q"
 endif
 
 " Highlight current line number
