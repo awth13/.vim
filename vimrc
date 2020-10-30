@@ -36,7 +36,6 @@ set cmdheight=2
 " Set and format status line
 set laststatus=2
 
-
 " Window split settings
 set splitbelow
 set splitright
