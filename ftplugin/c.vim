@@ -1,3 +1,4 @@
 " Set margin line
-setlocal textwidth=80
-setlocal cc=-2     
+setlocal textwidth=82
+setlocal cc=-1
+highlight ColorColumn ctermbg=8
