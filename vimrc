@@ -55,7 +55,7 @@ set noswapfile
 """ Key mappings """
 
 " Set leader key
-let mapleader = ","
+let mapleader = "\<Space>"
 
 " Fast saving
 nmap <leader>w :w!<cr>
