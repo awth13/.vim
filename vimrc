@@ -52,7 +52,14 @@ set nobackup
 set nowb
 set noswapfile
 
-""" Key mappings """
+" Change cursor shape in INSERT and REPLACE modes
+let &t_SI = "\<Esc>[6 q"
+let &t_SR = "\<Esc>[4 q"
+let &t_EI = "\<Esc>[2 q" 
+
+""""""""""""""""
+" Key mappings "
+""""""""""""""""
 
 " Set leader key
 let mapleader = "\<Space>"
